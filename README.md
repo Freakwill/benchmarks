@@ -2,7 +2,7 @@
 
 ## Introduction
 
-One of my friends told me at least three times that Java is the greatest computer language currently. It is fast and safe. He care about the performance of the languages very much. I think the speed of a language is indeed nonnegligible. I try to learn a new language that is fast enough and has a user-friendly grammar.
+One of my friends told me at least three times that Java is the greatest computer language currently. It is fast and safe. He cares about the performance of the languages very much. I think the speed of a language is indeed nonnegligible. I try to learn a new language that is fast enough and has a user-friendly grammar.
 
 ## primes
 
@@ -25,6 +25,7 @@ def primes(n):
     for x in range(3, n+1, 2):
         if f[x] == 0:
             P.append(x)
+    # P = [2] + [x for x in range(3, n+1, 2) if f[x] == 0]
  
     return P
 ```
