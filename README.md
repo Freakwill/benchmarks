@@ -41,3 +41,5 @@ def primes(n):
 
 
 To my surprise, Ruby is faster than Python! :astonished: Julia is really fucking rapid, even faster than Python with numba. I tried my best to implement the algorithm in Java, but failed :cry:. I do not think I would learn Java currently, or C-family, their grammar is overstaffed and not user-friendly. I also do not master Haskell but I would persist in learning it. The grammar of Julia is similar to Matlab, but with much new concept that scare me.
+
+I implemented the algorithm with Go, it perfume well, but its grammar is also a little wired for me.
