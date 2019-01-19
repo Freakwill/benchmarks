@@ -38,7 +38,7 @@ def primes(n):
 
 | Python(numba) | Ruby  | Lua   | Julia | Java | Haskell | Go(compile)         |
 | ------------- | ----- | ----- | ----- | ---- | ------- | ------------------- |
-| 0.9(~0.8)     | ~1.92 | ~2.77 | 0.25  | ?    | ?       | ~180.422µs(195.411) |
+| ~0.9(~0.75)   | ~1.92 | ~2.77 | 0.25  | ?    | ?       | ~180.422µs(195.411) |
 
 
 
@@ -46,4 +46,4 @@ To my surprise, Ruby is faster than Python! :astonished: Julia is really fucking
 
 
 
-I implemented the algorithm with Go, it perfume well, but its grammar is also a little wired for me.
+I implemented the algorithm with Go, it perfume unbelievable well!😲 
