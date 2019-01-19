@@ -6,8 +6,9 @@ import (
 "math"
 )
 
+
 func primes(n int) []int{
-    var f [10000000+1]int;
+    var f [10000001]int;
     var i int;
     for i=0; i< n+1; i++{
         if i%2 == 0 {
@@ -18,18 +19,16 @@ func primes(n int) []int{
     }
 
     nn := int(math.Floor(math.Sqrt(float64(n))));
-    i = 3;
     var j int;
-    for i=0; i < nn; i +=2 {
+    for i=3; i <= nn; i += 2 {
         if f[i] == 1 {
-            for j = i * i; j <= n; j+= 2*i {
+            for j = i * i; j <= n; j += 2*i {
                 f[j] = 0;
-                j += 2 * i;
-                }  //i.e. j=i(i+2) not j += i, since 2|i(i+1)
-            }
+            }  //i.e. j=i(i+2) not j += i, since 2|i(i+1)
+        }
     }
 
-    var P []int = make([]int, n)
+    var P []int = make([]int, 0)
     P = append(P, 2);
     var x int;
     for i=0; i< (n -1) / 2; i++ {
@@ -38,6 +37,9 @@ func primes(n int) []int{
             P = append(P, x);
         }
     }
+    // for _, p := range P {
+    //     fmt.Println(p)
+    // }
     return P;
 }
 
