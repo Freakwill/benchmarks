@@ -36,13 +36,13 @@ def primes(n):
 
 ### Results(/s)
 
-| Python(numba) | Ruby  | Lua(MoonScript) | Julia | Java | Haskell | Go(compile)         |
-| ------------- | ----- | --------------- | ----- | ---- | ------- | ------------------- |
-| ~0.9(~0.75)   | ~1.92 | ~2.77(~1.5)     | ~0.25 | ?    | ?       | ~180.422µs(195.411) |
+| Python(numba) | Ruby  | Lua(MoonScript) | Julia | Java | Haskell | Go(compile)         | CoffeeScript |
+| ------------- | ----- | --------------- | ----- | ---- | ------- | ------------------- | ------------ |
+| ~0.9(~0.75)   | ~1.92 | ~2.77(~1.5)     | ~0.25 | ?    | ?       | ~180.422µs(195.411) | ~0.4         |
 
 
 
-To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia is really fucking rapid, even faster than Python with numba. I tried my best to implement the algorithm in Java, but failed :cry:. I do not think I would learn Java currently, or C-family, their grammar is overstaffed and not user-friendly. I also do not master Haskell but I would persist in learning it. The grammar of Julia is similar to Matlab, but with many new concept that scares me.
+To my surprise, Ruby is faster than Python! :astonished: Julia is really fucking rapid, even faster than Python with numba. I tried my best to implement the algorithm in Java, but failed :cry:. I do not think I would learn Java currently, or C-family, their grammar is overstaffed and not user-friendly. I also do not master Haskell but I would persist in learning it. The grammar of Julia is similar to Matlab, but with many new concept that scares me.
 
 
 
@@ -51,3 +51,7 @@ I implemented the algorithm with Go, it perfume unbelievable well!😲
 
 
 MoonScript! Come on! You are excellent.
+
+
+
+CoffeeScript is great!
