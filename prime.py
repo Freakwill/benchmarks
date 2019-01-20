@@ -8,7 +8,7 @@ import time
  
 from numba import jit
 
-#@jit
+@jit(nopython=True)
 def primes(n):
     # sieve of Eratosthenes
     f = np.ones(n+1)
@@ -16,7 +16,7 @@ def primes(n):
     i = 3
     nn = np.sqrt(n)
     while i <= nn:
-        if f[i] == 1:
+        if f[i]:
             f[i*i::i*2]=0
         i += 2
  
