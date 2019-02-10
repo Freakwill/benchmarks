@@ -36,9 +36,9 @@ def primes(n):
 
 ### Results(/s)
 
-| Python(numba) | Ruby  | Lua(MoonScript) | Julia | Java | Haskell | Go(compile)         | CoffeeScript |
-| ------------- | ----- | --------------- | ----- | ---- | ------- | ------------------- | ------------ |
-| ~0.9(~0.75)   | ~1.82 | ~2.77(~1.5)     | ~0.25 | ?    | ?       | ~180.422µs(195.411) | ~0.4         |
+| Python(numba) | Ruby  | Lua(MoonScript) | Julia | Java | Haskell | Go(compile)         | JS(CoffeeScript) |
+| ------------- | ----- | --------------- | ----- | ---- | ------- | ------------------- | ---------------- |
+| ~0.9(~0.75)   | ~1.82 | ~2.77(~1.5)     | ~0.25 | ?    | ?       | ~180.422µs(195.411) | (~.35)~0.4       |
 
 
 
@@ -46,7 +46,7 @@ To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia i
 
 
 
-I implemented the algorithm with Go, it perfume unbelievable well!😲 
+I implemented the algorithm with Go, it perfume unbelievable well!😲 😲 😲 
 
 
 
@@ -54,4 +54,4 @@ MoonScript! Come on! You are excellent.
 
 
 
-CoffeeScript is great!
+CoffeeScript is great! So is JS.
