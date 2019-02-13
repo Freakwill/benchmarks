@@ -1,51 +1,47 @@
 public class prime
 {
-    public static Integer[] primes(int n)
+    public static int[] primes(int n)
     {
         int f[]=new int [n + 1];
-        for(int i=0; i< n+1; i++)
-            if(i%2 == 0) f[i]=1;
-            else f[i] = 0;
+        for(int i=0; i<= n; i++){
+            f[i]=i %2;}
 
     double nn = Math.sqrt(n);
     int i = 3;
     int j;
     while (i <= nn){
-        if (f[i] == 0)
-            {j = i * i;
-            while (j <= n)
-                {f[j] = 1;
-                j += 2 * i;}  //i.e. j=i(i+2) not j += i, since 2|i(i+1)
-            }
+        if (f[i] == 1) {
+            for(j=i*i; j<= n; j+= 2*i){
+                f[j]=0;}
+        }
         i += 2;
     }
 
-    Integer []P={2};
-    List<Integer> list=new ArrayList(Arrays.asList(P));//**须定义时就进行转化**
-    Integer x;
+    int P[]=new int [n];
+    P[0] = 2;
+    int x;
+    int k=0;
     for(i=0; i< (n -1) / 2; i++){
-        {x = 3 + 2 * i;
-        if (f[x] == 0) {P.add(P.size(), x);}
+        x = 3 + 2 * i;
+        if (f[x] == 1) {
+            P[k]=x;k ++;
         }
     }
 
-    Integer[] nP=new Integer[list.size()];
-    nP = list.toArray(new Integer[0]);
-    return nP;
+    return P;
 }
 
-    
 
     public static void main(String[] args)
     {
 
-    long begintime = System.currentTimeMillis();
+    double begintime = System.currentTimeMillis();
     primes(10000000);
-    long endtime = System.currentTimeMillis();
+    double endtime = System.currentTimeMillis();
 
-    long costTime = endtime - begintime;
+    double costTime = endtime - begintime;
 
-    System.out.printf("%f ",costTime);
+    System.out.printf("%f", costTime / 1000);
     }
  
  
