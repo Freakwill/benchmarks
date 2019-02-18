@@ -24,10 +24,7 @@ def primes(n):
                 f[j] = 1
                 j += i * 2  #i.e. j=i(i+2) not j += i, since 2|i(i+1)
         i += 2
-    P = [2]
-    for x in range(3, n+1, 2):
-        if f[x] == 0:
-            P.append(x)
+    P = [2] + [x for x in range(3, n+1, 2) if f[x] == 0]
  
     return P
 ```
@@ -38,7 +35,7 @@ def primes(n):
 
 | Python(numba) | Ruby/Crystal | Lua(MoonScript) | Julia | Java(compiled) | Haskell | Go(compiled) | JS(CoffeeScript) |
 | ------------- | ------------ | --------------- | ----- | -------------- | ------- | ------------ | ---------------- |
-| ~0.9(~0.75)   | ~1.82/~0.45  | ~2.77(~1.5)     | ~0.25 | ~0.17(~0.15)   | ?       | ~180µs(195)  | ~.35(~0.4)       |
+| ~0.9(~0.75)   | ~1.79/~0.45  | ~2.77(~1.5)     | ~0.25 | ~0.17(~0.15)   | ?       | ~180µs(195)  | ~.35(~0.4)       |
 
 
 
@@ -55,3 +52,31 @@ MoonScript! Come on! You are excellent.
 
 
 CoffeeScript is great! So is JS.
+
+---
+
+  型号名称：	MacBook Pro
+
+  型号标识符：	MacBookPro12,1
+
+  处理器名称：	Intel Core i5
+
+  处理器速度：	2.7 GHz
+
+  处理器数目：	1
+
+  核总数：	2
+
+  L2 缓存（每个核）：	256 KB
+
+  L3 缓存：	3 MB
+
+  内存：	8 GB
+
+  Boot ROM 版本：	MBP121.0171.B00
+
+  SMC 版本（系统）：	2.28f7
+
+  序列号（系统）：	C02S27C5FVH5
+
+  硬件 UUID：	863AEEE2-6147-55E7-A37D-604FC48C662B
