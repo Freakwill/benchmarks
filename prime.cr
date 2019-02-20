@@ -21,12 +21,11 @@ def primes(n)
     p.insert(0, 2)
     return p
 end
- 
-t1 = Time.now
 
 n = 10000000
-primes(n)
 
-t2 = Time.now
-delta = t2 - t1
-puts delta
+require "benchmark"
+
+Benchmark.ips do |x|
+  x.report("primes") { primes n }
+end
