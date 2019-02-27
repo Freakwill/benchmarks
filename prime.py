@@ -23,11 +23,11 @@ def primes(n):
     P = [2] + [x for x in range(3, n+1, 2) if f[x]]
     return P
  
-t1 = time.clock()
+t1 = time.perf_counter()
 n = 10000000   #100以内的素数
 P = primes(n)
 
-t2 = time.clock()
+t2 = time.perf_counter()
 print(t2-t1)
 
 # import ctypes
