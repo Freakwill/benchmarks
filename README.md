@@ -6,13 +6,18 @@ One of my friends told me at least three times that Java is the greatest compute
 
 ## primes
 
+### Algorithm (Sieve of Eratosthenes)
+
+Remark: Should contain step I and step II
+
 ```python
 # Algorithm
 
 def primes(n):
     # sieve of Eratosthenes
-    # not optimized, cost about 3 sec
+    # if not optimized, it will cost about 3 sec
     
+    # step I
     f = np.zeros(n+1)
     f[0::2] = 1
     i = 3
@@ -24,6 +29,8 @@ def primes(n):
                 f[j] = 1
                 j += i * 2  #i.e. j=i(i+2) not j += i, since 2|i(i+1)
         i += 2
+
+    # step II
     P = [2] + [x for x in range(3, n+1, 2) if f[x] == 0]
  
     return P
@@ -39,7 +46,7 @@ def primes(n):
 
 
 
-To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia is really fucking rapid, even faster than Python with numba. I tried my best to implement the algorithm in Java, but failed :cry:. I do not think I would learn Java currently, or C-family, their grammar is overstaffed and not user-friendly. I also do not master Haskell but I would persist in learning it. The grammar of Julia is similar to Matlab, but with many new concept that scares me.
+To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia is really fucking rapid, even faster than Python with numba. It is fastest among interpreting languages. I tried my best to implement the algorithm in Java, but failed :cry:. I do not think I would learn Java currently, or C-family, their grammar is overstaffed and not user-friendly. I also do not master Haskell but I would persist in learning it. The grammar of Julia is similar to Matlab, but with many new concept that scares me.
 
 
 
@@ -55,28 +62,28 @@ CoffeeScript is great! So is JS.
 
 ---
 
-  型号名称：	MacBook Pro
+  Name：	MacBook Pro
 
-  型号标识符：	MacBookPro12,1
+  Iden：	MacBookPro12,1
 
-  处理器名称：	Intel Core i5
+  CPU：	Intel Core i5
 
-  处理器速度：	2.7 GHz
+  speed：	2.7 GHz
 
-  处理器数目：	1
+  number：	1
 
-  核总数：	2
+  number of cores：	2
 
-  L2 缓存（每个核）：	256 KB
+  L2 cache（per core）：	256 KB
 
-  L3 缓存：	3 MB
+  L3 cache：	3 MB
 
-  内存：	8 GB
+  memory：	8 GB
 
-  Boot ROM 版本：	MBP121.0171.B00
+  Boot ROM version：	MBP121.0171.B00
 
-  SMC 版本（系统）：	2.28f7
+  SMC version（system）：	2.28f7
 
-  序列号（系统）：	C02S27C5FVH5
+  seq No（system）：	C02S27C5FVH5
 
-  硬件 UUID：	863AEEE2-6147-55E7-A37D-604FC48C662B
+  hardware UUID：	863AEEE2-6147-55E7-A37D-604FC48C662B
