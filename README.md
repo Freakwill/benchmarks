@@ -50,7 +50,7 @@ To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia i
 
 
 
-I implemented the algorithm with Go, it perfume unbelievable well!😲 😲 😲 
+I implemented the algorithm with Go, it performs unbelievable well!😲 😲 😲 
 
 
 
