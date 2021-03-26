@@ -17,7 +17,7 @@ def primes(n)
         i += 2
     end
 
-    p = Array.new( (n -1) / 2 ) { |i| 3 + 2 * i }.select { |x| f[x] == 1 }
+    p = Array.new( (n -1) // 2 ) { |i| 3 + 2 * i }.select { |x| f[x] == 1 }
     p.insert(0, 2)
     return p
 end
