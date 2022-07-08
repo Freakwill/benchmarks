@@ -2,7 +2,7 @@
 
 ## Introduction
 
-One of my friends told me at least three times that Java is the greatest computer language currently. It is fast and safe. He cared about the performance of the languages very much. I think the speed of a language is indeed nonnegligible. I try to learn a new language that is fast enough and has a user-friendly grammar.
+One of my friends told me at least three times that Java is the greatest computer language currently. It is fast and safe. He care about the performance of the languages very much. I think the speed of a language is indeed nonnegligible. I try to learn a new language that is fast enough and has a user-friendly grammar.
 
 ## primes
 
@@ -40,9 +40,9 @@ def primes(n):
 
 ### Results(/s)
 
-| Python(numba)3.6/3.7  | Ruby/Crystal(release) | Lua/MoonScript | Julia | Java(compiled) | Haskell | Go(compiled) | JS/CoffeeScript |
-| --------------------- | --------------------- | -------------- | ----- | -------------- | ------- | ------------ | --------------- |
-| ~0.9(0.75)/~0.88(0.6) | ~1.79/~0.45(0.1)      | ~2.77/~1.5     | ~0.25 | ~0.17(0.15)    | ?       | ~180µs(195)  | ~.35/~0.4       |
+| Python(numba)3.6/3.7  | Ruby/Crystal(release) | Lua/MoonScript | Julia | Java(compiled) | Haskell | Go(compiled) | JS/CoffeeScript |Nim |
+| --------------------- | --------------------- | -------------- | ----- | -------------- | ------- | ------------ | --------------- | ---|
+| ~0.9(0.75)/~0.88(0.6) | ~1.79/~0.45(0.1)      | ~2.77/~1.5     | ~0.25 | ~0.17(0.15)    | ?       | ~180µs(195)  | ~.35/~0.4       | ~0.037 |
 
 
 
@@ -50,7 +50,7 @@ To my surprise, Ruby is faster than Python (without numpy)! :astonished: Julia i
 
 
 
-I implemented the algorithm with Go, it performs unbelievable well!😲 😲 😲 
+I implemented the algorithm with Go, it perfume unbelievable well!😲 😲 😲 
 
 
 
@@ -59,6 +59,8 @@ MoonScript! Come on! You are excellent.
 
 
 CoffeeScript is great! So is JS.
+
+Nim is also fast enough.
 
 ---
 
